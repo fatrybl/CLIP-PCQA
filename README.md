@@ -1,3 +1,5 @@
+> **Fork** of [Olivialyt/CLIP-PCQA](https://github.com/Olivialyt/CLIP-PCQA) for the VAPE comparison; [FORK_CHANGES.md](FORK_CHANGES.md) lists every difference from the original.
+
 <h1 align="center"> CLIP-PCQA: Exploring Subjective-Aligned Vision-Language Modeling for Point Cloud Quality Assessment</h1>
 <div align="center"> Yating Liu<sup>*</sup>, Yujie Zhang<sup>*</sup>, Ziyu Shan, Yiling Xu<sup>†</sup>
 

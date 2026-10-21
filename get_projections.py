@@ -53,7 +53,8 @@ def rotation_matrix(vec1, vec2):
 def find_min_bounding_rect(mask_image):
     mask_image_gray = cv2.cvtColor(mask_image, cv2.COLOR_BGR2GRAY)
 
-    white_pixel_coords = cv2.findNonZero(mask_image_gray)
+    # Fork: OpenCV 5 returns the points as N x 2, earlier versions as N x 1 x 2.
+    white_pixel_coords = cv2.findNonZero(mask_image_gray).reshape(-1, 1, 2)
 
     min_x = np.min(white_pixel_coords[:, 0, 0])
     max_x = np.max(white_pixel_coords[:, 0, 0])
