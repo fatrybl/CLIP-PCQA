@@ -97,12 +97,12 @@ without pytorch3d, and seeds the random crops.
   cover 105 more pixels than pytorch3d's in one view of a ONCE scan), with `test_single_ply.py`.
 - `.gitignore`: bytecode, build products, logs (the released `logs/` stay tracked) and
   `total_ckpts` (the weights, downloaded from the authors' links).
-- Dependency: `ftfy` 6.3.1, in the fork's own venv: VAPE's environment through
-  `--system-site-packages` plus `venv_requirements.txt`, built by `setup_venv.sh` (the authors'
-  `requirements.txt` is kept and not installed). The release pins 6.2.0, whose requirement would
-  downgrade `wcwidth`; the five prompts tokenize to the same ids under both. Moved out of VAPE's
-  environment on 2026-10-21; from the venv, the 720 sweep values of VAPE's paper ladder (ten
-  samples, three levels, 24 states) are equal bit for bit to the ones recorded before.
+- Dependencies: `ftfy` and `regex`, which the vendored tokenizer imports, in the fork's own venv:
+  VAPE's environment through `--system-site-packages` plus `venv_requirements.txt`, built by
+  `setup_venv.sh` (the authors' `requirements.txt` is kept and not installed). The release pins
+  ftfy 6.2.0, whose requirement would downgrade `wcwidth`; the five prompts tokenize to the same
+  ids under it. From the venv, the 720 sweep values of VAPE's paper ladder (ten samples, three
+  levels, 24 states) are equal bit for bit to the ones recorded in VAPE's environment.
 
 ## 5. Tests
 

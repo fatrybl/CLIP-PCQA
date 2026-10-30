@@ -1,5 +1,5 @@
-# The venv CLIP-PCQA runs in, on top of VAPE's environment (setup_venv.sh): ftfy, which the
-# released CLIP tokenizer imports, at the version the fork is verified on. Its wcwidth, torch,
-# torchvision, NumPy and Pillow come from VAPE's environment. requirements.txt is the authors'
-# own environment and is not installed.
-ftfy==6.3.1
+# The venv CLIP-PCQA runs in, on top of VAPE's environment (setup_venv.sh): ftfy and regex, which
+# the released CLIP tokenizer imports. requirements.txt is the authors' environment and is not
+# installed.
+ftfy
+regex
